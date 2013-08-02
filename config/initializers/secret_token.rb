@@ -9,4 +9,17 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CwdgRails::Application.config.secret_key_base = 'd2388fe0f488afbc96ff32cfbcb22adf1b0e18167135b34bd0858c59160698010d166efe633a1ace7005b6bdb9216f68e6c6af719da25b7f1599b7fbc7fe45e0'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    File.read(token_file).chomp
+  else
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+CwdgRails::Application.config.secret_key_base = secure_token

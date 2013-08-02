@@ -17,3 +17,12 @@
 
 # API Keys
 config/github.yml
+
+# MISC
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
