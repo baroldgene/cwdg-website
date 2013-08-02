@@ -4,6 +4,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 
 gem 'active_decorator',  '~> 0.3.4'
+gem 'bcrypt-ruby',       '~> 3.1.1'
 gem 'cancan',           '~> 1.6.10'
 gem 'coffee-rails',      '~> 4.0.0'
 gem 'cocoon',            '~> 1.2.0'
@@ -14,6 +15,7 @@ gem 'omniauth',          '~> 1.1.4'
 gem 'omniauth-github',   '~> 1.1.1'
 gem 'pg',               '~> 0.16.0'
 gem 'sass-rails',        '~> 4.0.0'
+gem 'slim-rails',        '~> 2.0.1'
 gem 'simple_form',    '~> 3.0.0.rc'
 gem 'therubyracer',     '~> 0.11.4', platforms: :ruby
 gem 'turbolinks',        '~> 1.3.0'
@@ -34,8 +36,9 @@ group :doc do
 end
 
 group :test do
-	gem 'capybara',            '~> 2.1.0'
-	gem 'selenium-webdriver', '~> 2.33.0'
+	gem 'capybara',             '~> 2.1.0'
+	gem 'factory_girl_rails',   '~> 4.2.0'
+	gem 'selenium-webdriver',  '~> 2.33.0'
 end
 
 group :production do
