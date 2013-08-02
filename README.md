@@ -1,5 +1,9 @@
 #&lt;CWDG /&gt; Website
 
+[![Code Climate](https://codeclimate.com/github/CWDG/psychic-octo-wallhack.png)](https://codeclimate.com/github/CWDG/psychic-octo-wallhack)
+
+[![Build Status](https://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](https://travis-ci.org/[cwdg]/[psychic-octo-wallhack])
+
 ##Description
 
 This is our latest web application for our group in
