@@ -56,7 +56,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    colorize (0.5.8)
     columnize (0.3.6)
+    coveralls (0.6.7)
+      colorize
+      multi_json (~> 1.3)
+      rest-client
+      simplecov (>= 0.7)
+      thor
     debug_inspector (0.0.2)
     debugger (1.6.1)
       columnize (>= 0.3.1)
@@ -189,6 +196,8 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec-core (2.14.4)
     rspec-expectations (2.14.0)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -217,6 +226,10 @@ GEM
     simple_form (3.0.0.rc)
       actionpack (>= 4.0.0.rc1, < 4.1)
       activemodel (>= 4.0.0.rc1, < 4.1)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     slim (2.0.1)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
@@ -273,6 +286,7 @@ DEPENDENCIES
   capybara (~> 2.1.0)
   cocoon (~> 1.2.0)
   coffee-rails (~> 4.0.0)
+  coveralls (~> 0.6.7)
   factory_girl_rails (~> 4.2.0)
   jbuilder (~> 1.2)
   jquery-rails (~> 3.0.4)

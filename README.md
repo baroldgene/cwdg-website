@@ -1,10 +1,9 @@
 #&lt;CWDG /&gt; Website
 
-[![Code Climate](https://codeclimate.com/github/CWDG/psychic-octo-wallhack.png)](https://codeclimate.com/github/CWDG/psychic-octo-wallhack)
-
 [![Build Status](https://travis-ci.org/CWDG/psychic-octo-wallhack.png)](httpsi://travis-ci.org/CWDG/psychic-octo-wallhack)
-
-
+[![Code Climate](https://codeclimate.com/github/CWDG/psychic-octo-wallhack.png)](https://codeclimate.com/github/CWDG/psychic-octo-wallhack)
+[![Coverage Status](https://coveralls.io/repos/CWDG/psychic-octo-wallhack/badge.png)](https://coveralls.io/r/CWDG/psychic-octo-wallhack)
+[![Dependency Status](https://gemnasium.com/CWDG/psychic-octo-wallhack.png)](https://gemnasium.com/CWDG/psychic-octo-wallhack)
 
 ##Description
 
