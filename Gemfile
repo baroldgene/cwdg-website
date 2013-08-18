@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 
 gem 'active_decorator',  '~> 0.3.4'
 gem 'bcrypt-ruby',       '~> 3.1.1'
+gem 'bourbon',           '~> 3.1.8'
 gem 'cancan',           '~> 1.6.10'
 gem 'cocoon',            '~> 1.2.0'
 gem 'coffee-rails',      '~> 4.0.0'
