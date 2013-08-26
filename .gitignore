@@ -29,3 +29,7 @@ doc/
 .rvmrc
 
 coverage/
+
+# Zeus
+custom_plan.rb
+zeus.json
