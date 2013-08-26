@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+  has_many :presentations, foreign_key: :speaker_id
+  has_many :talks,         foreign_key: :creator_id
+
   def self.from_omniauth(auth)
     where(auth.slice("provider", "uid")).first || create_from_omniauth(auth)
   end
