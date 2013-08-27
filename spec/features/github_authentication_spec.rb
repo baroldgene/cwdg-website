@@ -12,11 +12,11 @@ describe "Signing In" do
     })
 
     visit root_path
-    click_link "Sign in with GitHub"
+    click_link "SIGN IN WITH GITHUB"
   end
 
   it "shoud have the users name as the link" do
-    page.find(".user_nav").should have_content(cwdg_user.name)
+    page.find(".login").should have_content(cwdg_user.name)
   end
 
   it "should direct back to the page you were on" do
