@@ -27,7 +27,7 @@ section.info
         .polls.nav_icon
           ' #{image_tag("polls.png", class: "icon_polls")}
           | <span>Polls</span>
-      = link_to about_path
+      = link_to '#'
         .about_us.nav_icon
           ' #{image_tag("about.png", class: "icon_about_us")}
           | <span class="about_large">About Us</span>
@@ -44,21 +44,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Wednesday, September 11th, 2013</span>
+        h1 Next Meeting: <span class="date">Tuesday, August 26th, 2013</span>
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Another excursion into the Ruby Programming Language</span>
-        = link_to '#'
-          .presentation_resource_link Read More about Ruby here
+        | <span class="description">An introduction to the CWDG</span>
+        = link_to 'http://github.com/CWDG'
+          .presentation_resource_link Check out our GitHub page
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">Ruby Koans - Interactive!</span>
+        | <span class="description">Get started with development environments!</span>
         = link_to '#'
-          .presentation_resource_link Ruby Koans Online
+          .presentation_resource_link Make sure to bring your laptops
 
 section.about
   .container
@@ -75,7 +75,7 @@ section.about
     .info_column
       '#{image_tag("clipboard.png", class: "icon_clipboard")}
       h2 MEETING TIMES
-      p Meeting times are every Tuesday at 7:00pm in Dreese Labs room 369. Sometimes these meetings will be tutorials or other small projects while other days there might be a guest speaker. <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Join the mailing list</a> to see what is coming up.
+      p Meeting times are every Tuesday at 7:00pm in Dreese Labs room 305. Sometimes these meetings will be tutorials or other small projects while other days there might be a guest speaker. <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Join the mailing list</a> to see what is coming up.
 
 section.getting_started
   .container
@@ -92,5 +92,7 @@ section.getting_started
     = link_to "JOIN THE MAILING LIST", "https://lists.service.ohio-state.edu/mailman/listinfo/cwdg", class: "button"
 
 footer
+  .container
+    '#{image_tag("neo-sponsorship.png")}
   .container
     p Email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> for more information.
