@@ -44,21 +44,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, September 17th, 2013</span>
+        h1 Next Meeting: <span class="date">Tuesday, October 1th, 2013</span>
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Learning the basics of Web using HTML</span>
-        = link_to '#'
-          .presentation_resource_link Please bring your charged laptops!
+        | <span class="description">An introduction to Vagrant</span>
+        = link_to 'http://www.vagrantup.com/'
+          .presentation_resource_link Learn more about Vagrant
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">A deep dive into the Internet, how the web works</span>
+        | <span class="description">Learning Ruby with Blackjack!</span>
         = link_to '#'
-          .presentation_resource_link It's not just a series of tubes!
+          .presentation_resource_link Please bring your laptops
 
 section.about
   .container
@@ -75,7 +75,7 @@ section.about
     .info_column
       '#{image_tag("clipboard.png", class: "icon_clipboard")}
       h2 MEETING TIMES
-      p Meeting times are every Tuesday at 7:00pm in the Dreese Labs Auditorium on the first floor. Sometimes these meetings will be tutorials or other small projects while other days there might be a guest speaker. <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Join the mailing list</a> to see what is coming up.
+      p Meeting times are every Tuesday at 7:00pm in the Dreese Labs 260. Sometimes these meetings will be tutorials or other small projects while other days there might be a guest speaker. <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Join the mailing list</a> to see what is coming up.
 
 section.getting_started
   .container
