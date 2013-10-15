@@ -44,21 +44,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, October 8th, 2013</span>
+        h1 Next Meeting: <span class="date">Tuesday, October 15th, 2013</span>
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">An introduction to Coffee Script</span>
-        = link_to 'http://coffeescript.org/'
-          .presentation_resource_link Learn more about Coffee Script
+        | <span class="description">Taking the stage with Sinatra</span>
+        = link_to 'http://www.sinatrarb.com/'
+          .presentation_resource_link Learn more about Sinatra
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">Learning Ruby with Blackjack! (Continued)</span>
-        = link_to '#'
-          .presentation_resource_link Please bring your laptops
+        | <span class="description">Open ID and Oauth</span>
+        = link_to 'http://openid.net/'
+          .presentation_resource_link Open ID Foundation
 
 section.about
   .container
