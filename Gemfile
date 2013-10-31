@@ -7,21 +7,21 @@ gem 'active_decorator',  '~> 0.3.4'
 gem 'bcrypt-ruby',       '~> 3.1.1'
 gem 'bourbon',           '~> 3.1.8'
 gem 'cancan',           '~> 1.6.10'
-gem 'cocoon',            '~> 1.2.0'
-gem 'coffee-rails',      '~> 4.0.0'
-gem 'coveralls',         '~> 0.6.7', require: false
-gem 'jbuilder',            '~> 1.2'
+gem 'cocoon',            '~> 1.2.1'
+gem 'coffee-rails',      '~> 4.0.1'
+gem 'coveralls',         '~> 0.7.0', require: false
+gem 'jbuilder',          '~> 1.5.2'
 gem 'jquery-rails',      '~> 3.0.4'
-gem 'octokit',          '~> 1.25.0'
+gem 'octokit',           '~> 2.5.1'
 gem 'omniauth',          '~> 1.1.4'
 gem 'omniauth-github',   '~> 1.1.1'
 gem 'pg',               '~> 0.17.0'
-gem 'sass-rails',        '~> 4.0.0'
-gem 'slim-rails',        '~> 2.0.1'
-gem 'simple_form',    '~> 3.0.0.rc'
-gem 'therubyracer',     '~> 0.11.4', platforms: :ruby
+gem 'sass-rails',        '~> 4.0.1'
+gem 'slim-rails',        '~> 2.0.3'
+gem 'simple_form',       '~> 3.0.0'
+gem 'therubyracer',     '~> 0.12.0', platforms: :ruby
 gem 'turbolinks',        '~> 1.3.0'
-gem 'uglifier',          '>= 1.3.0'
+gem 'uglifier',          '>= 2.3.0'
 gem 'unicorn',           '~> 4.6.3'
 
 group :development, :test do
@@ -40,7 +40,7 @@ end
 group :test do
   gem 'capybara',             '~> 2.1.0'
   gem 'factory_girl_rails',   '~> 4.2.0'
-  gem 'selenium-webdriver',  '~> 2.33.0'
+  gem 'selenium-webdriver',  '~> 2.37.0'
 end
 
 group :production do

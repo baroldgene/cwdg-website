@@ -46,7 +46,6 @@ test:
   encoding: unicode
   database: cwdg_rails_test
   pool: 5
-  username: postgres
 
 production:
   adapter: postgresql
