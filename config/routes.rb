@@ -4,8 +4,8 @@ CwdgRails::Application.routes.draw do
   match 'about',                   to: 'static_pages#about',            via: :get
   match 'members',                 to: 'users#index',                   via: :get
 
-  match '/:username',              to: 'users#show',         as: :user, via: :get
-  match '/:username/edit',         to: 'users#edit',                    via: :get
+  match '/users/:id',              to: 'users#show',         as: :user, via: :get
+  match '/users/:id/edit',         to: 'users#edit',                    via: :get
 
   match 'auth/:provider/callback', to: 'sessions#create',               via: :get
   match 'auth/failure',            to: redirect('/'),                   via: :get

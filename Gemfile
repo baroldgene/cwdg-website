@@ -10,6 +10,7 @@ gem 'cancan',           '~> 1.6.10'
 gem 'cocoon',            '~> 1.2.1'
 gem 'coffee-rails',      '~> 4.0.1'
 gem 'coveralls',         '~> 0.7.0', require: false
+gem 'friendly_id',       '~> 5.0.0'
 gem 'jbuilder',          '~> 1.5.2'
 gem 'jquery-rails',      '~> 3.0.4'
 gem 'octokit',           '~> 2.5.1'
@@ -40,7 +41,7 @@ end
 group :test do
   gem 'capybara',             '~> 2.1.0'
   gem 'factory_girl_rails',   '~> 4.2.0'
-  # gem 'selenium-webdriver',  '~> 2.37.0'
+  gem 'selenium-webdriver',  '~> 2.37.0'
 end
 
 group :production do

@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :load_user, only: [:show]
+  before_filter :set_user, only: [:show]
 
   def index
     @user = User.all
@@ -11,7 +11,9 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def load_user
-    @user = User.where(username: params[:username]).first!
+  private
+
+  def set_user
+    @user = User.find(params[:id])
   end
 end
