@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :username, use: :slugged
 
   has_many :presentations, foreign_key: :speaker_id
   has_many :talks,         foreign_key: :creator_id
