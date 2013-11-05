@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.0.0'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.1'
 
 gem 'active_decorator',  '~> 0.3.4'
 gem 'bcrypt-ruby',       '~> 3.1.1'
@@ -12,7 +12,7 @@ gem 'coffee-rails',      '~> 4.0.1'
 gem 'coveralls',         '~> 0.7.0', require: false
 gem 'friendly_id',       '~> 5.0.0'
 gem 'jbuilder',          '~> 1.5.2'
-gem 'jquery-rails',      '~> 3.0.4'
+gem 'jquery-rails'
 gem 'octokit',           '~> 2.5.1'
 gem 'omniauth',          '~> 1.1.4'
 gem 'omniauth-github',   '~> 1.1.1'
@@ -21,7 +21,7 @@ gem 'sass-rails',        '~> 4.0.1'
 gem 'slim-rails',        '~> 2.0.3'
 gem 'simple_form',       '~> 3.0.0'
 gem 'therubyracer',     '~> 0.12.0', platforms: :ruby
-gem 'turbolinks',        '~> 1.3.0'
+gem 'turbolinks'
 gem 'uglifier',          '>= 2.3.0'
 gem 'unicorn',           '~> 4.6.3'
 
