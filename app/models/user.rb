@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
       user.name     = auth["info"]["name"] ? auth["info"]["name"] : user.username
       user.provider = auth["provider"]
       user.uid      = auth["uid"]
+      user.slug     = auth["username"]
     end
   end
 end
