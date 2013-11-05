@@ -44,21 +44,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, October 15th, 2013</span>
+        h1 Next Meeting: <span class="date">Tuesday, November 5th, 2013</span>
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Taking the stage with Sinatra</span>
-        = link_to 'http://www.sinatrarb.com/'
-          .presentation_resource_link Learn more about Sinatra
+        | <span class="description">Our first Twitter Clone with Rails and TDD</span>
+        = link_to 'http://ruby.railstutorial.org/ruby-on-rails-tutorial-book'
+          .presentation_resource_link Michael Hartl's Rails Tutorial
 
       .presentation
         ' #{image_tag("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">Open ID and Oauth</span>
-        = link_to 'http://openid.net/'
-          .presentation_resource_link Open ID Foundation
+        | <span class="description">A look into Sessions</span>
+        = mail_to 'mnakhaleh@gmail.com'
+          .presentation_resource_link Presented by Marwan Nakhaleh
 
 section.about
   .container
