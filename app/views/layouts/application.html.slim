@@ -5,5 +5,11 @@ html
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/Icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/Icon-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/Icon@2x.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/Icon-72@2x.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
   body
     = yield
