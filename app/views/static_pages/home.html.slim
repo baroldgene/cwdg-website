@@ -15,7 +15,7 @@ header
 
   .container.title
     h1.phrase Just a bunch of college students building awesome stuff.
-    = link_to "JOIN THE MAILING LIST", "https://lists.service.ohio-state.edu/mailman/listinfo/cwdg", class: "button"
+    = link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"
 section.info
   .container
     .nav
@@ -87,12 +87,14 @@ section.getting_started
 
     p You may also want to familiarize yourself with the <a href="http://ruby-lang.org">Ruby Programming Language</a> or look over our past meeting materials to familarize yourself with the topics you have missed.
 
-    p If you do nothing else, <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.
+    p If you do nothing else, <a href="http://eepurl.com/GBJFv">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.
 
-    = link_to "JOIN THE MAILING LIST", "https://lists.service.ohio-state.edu/mailman/listinfo/cwdg", class: "button"
+    = link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"
 
 footer
   .container
     '#{image_tag("neo-sponsorship.png")}
   .container
-    p Email <a href="mailto:cwdgosu@gmail.com">cwdgosu@gmail.com</a> for more information.
+    p Email
+      #{mail_to 'cwdgosu@gmail.com'}
+      for more information.
