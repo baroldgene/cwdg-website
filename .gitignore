@@ -17,6 +17,7 @@
 
 # API Keys
 config/github.yml
+config/newrelic.yml
 
 # MISC
 doc/
