@@ -7,11 +7,11 @@ header.profile
         - if current_user
           = link_to user_path(current_user)
             ' #{current_user.name}
-            = image_tag("octocat.png", class: "octocat")
+            = image_tag_with_at2x("octocat.png", class: "octocat")
         - else
           = link_to "/auth/github"
             | SIGN IN WITH GITHUB
-            = image_tag("octocat.png", class: "octocat")
+            = image_tag_with_at2x("octocat.png", class: "octocat")
 
   .container.profile_info
     = image_tag(@user.gravatar(120))
@@ -27,9 +27,9 @@ section.bio
 
 section.talks
   .container.talks_header
-    ' #{image_tag("talkbubble.png", class: "icon_bubble")}
+    ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
     - if current_user
       ' #{link_to 'Create Talk', '#', class: "talk_text"}
-      | #{link_to (image_tag("createtalk.png")), '#'}
+      | #{link_to (image_tag_with_at2x("createtalk.png")), '#'}
 

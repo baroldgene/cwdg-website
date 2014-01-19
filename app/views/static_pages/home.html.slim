@@ -7,11 +7,11 @@ header
         - if current_user
           = link_to user_path(current_user)
             ' #{current_user.name}
-            = image_tag("octocat.png", class: "octocat")
+            = image_tag_with_at2x("octocat.png", class: "octocat")
         - else
           = link_to "/auth/github"
             | SIGN IN WITH GITHUB
-            = image_tag("octocat.png", class: "octocat")
+            = image_tag_with_at2x("octocat.png", class: "octocat")
 
   .container.title
     h1.phrase Just a bunch of college students building awesome stuff.
@@ -22,40 +22,40 @@ section.info
     .nav
       = link_to '#'
         .calendar-mini.nav_icon
-          ' #{image_tag("calendar-mini.png", class: "icon_calendar-mini")}
+          ' #{image_tag_with_at2x("calendar-mini.png", class: "icon_calendar-mini")}
           | <span>Meetings</span>
       = link_to '#'
         .polls.nav_icon
-          ' #{image_tag("polls.png", class: "icon_polls")}
+          ' #{image_tag_with_at2x("polls.png", class: "icon_polls")}
           | <span>Polls</span>
       = link_to '#'
         .about_us.nav_icon
-          ' #{image_tag("about.png", class: "icon_about_us")}
+          ' #{image_tag_with_at2x("about.png", class: "icon_about_us")}
           | <span class="about_large">About Us</span>
           | <span class="mobile_about">About</span>
       = link_to '#'
         .tutorials.nav_icon
-          ' #{image_tag("tutorials.png", class: "icon_tutorials")}
+          ' #{image_tag_with_at2x("tutorials.png", class: "icon_tutorials")}
           | <span>Tutorials</span>
         .lightning.nav_icon
-          ' #{image_tag("lightning.png", class: "icon_lightning")}
+          ' #{image_tag_with_at2x("lightning.png", class: "icon_lightning")}
           | <span class="lightning_talks">Lightning Talks</span>
           | <span class="mobile_talks">Talks</span>
 
     .meeting
       .next_meeting
-        ' #{image_tag("calendar.png", class: "icon_calendar")}
+        ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
         h1 Next Meeting: <span class="date">Tuesday, January 21st, 2014</span>
 
       .presentation
-        ' #{image_tag("clock.png", class: "icon_clock")}
+        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
         | <span class="description">Lightning Talks!</span>
         = link_to 'https://github.com/CWDG/talks/issues/3'
           .presentation_resource_link Add your talk here!
 
       /.presentation
-      /  ' #{image_tag("clock.png", class: "icon_clock")}
+      /  ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
       /  ' <span class="time">8:00 <span>-</span></span>
       /  | <span class="description">A look into Sessions</span>
       /  = mail_to 'mnakhaleh@gmail.com'
@@ -64,17 +64,17 @@ section.info
 section.about
   .container
     .info_column
-      '#{image_tag("person.png", class: "icon_person")}
+      '#{image_tag_with_at2x("person.png", class: "icon_person")}
       h2 WHO WE ARE
       p Collegiate Web Developers are a collection of students, graduates and alumni at the Ohio State University who are making an effort to improve the web. We work hard to make ourselves, and others, better developers.
 
     .info_column
-      '#{image_tag("join.png", class: "icon_join")}
+      '#{image_tag_with_at2x("join.png", class: "icon_join")}
       h2 HOW CAN I JOIN?
       p If you are an OSU student who wants to get involved in web development this club is for you. It doesn't matter if you are an experienced developer or a beginner. CWDG offers something for all skill levels.
 
     .info_column
-      '#{image_tag("clipboard.png", class: "icon_clipboard")}
+      '#{image_tag_with_at2x("clipboard.png", class: "icon_clipboard")}
       h2 MEETING TIMES
       p Meeting times are every Tuesday at 7:00pm in the Dreese Labs 260. Sometimes these meetings will be tutorials or other small projects while other days there might be a guest speaker. <a href="https://lists.service.ohio-state.edu/mailman/listinfo/cwdg">Join the mailing list</a> to see what is coming up.
 
