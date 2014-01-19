@@ -18,9 +18,11 @@ header.profile
     h1 #{@user.name}
     .container
       p
-        - if current_user
-          = link_to 'Edit Profile ', '#'
+        - if can? :update, @user
+          = link_to 'Edit Profile ', edit_user_path(current_user)
           = link_to 'Signout', signout_path
+        - else
+          = link_to 'GitHub', "http://github.com/#{@user.username}"
 
 section.bio
   p #{@user.bio}

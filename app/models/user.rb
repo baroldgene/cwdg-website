@@ -9,10 +9,6 @@ class User < ActiveRecord::Base
     where(auth.slice("provider", "uid")).first || create_from_omniauth(auth)
   end
 
-  # def to_param
-  #   self.username.downcase
-  # end
-
   def self.create_from_omniauth(auth)
     create! do |user|
       user.username = auth["info"]["nickname"]
