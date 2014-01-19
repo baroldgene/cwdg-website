@@ -24,14 +24,15 @@ header.profile
         - else
           = link_to 'GitHub', "http://github.com/#{@user.username}"
 
-section.bio
-  p #{@user.bio}
+section
+  .container
+    p #{@user.bio}
 
 section.talks
   .container.talks_header
     ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
-    - if current_user
-      ' #{link_to 'Create Talk', '#', class: "talk_text"}
-      | #{link_to (image_tag_with_at2x("createtalk.png")), '#'}
+    - if can? :create, Talk and @user == current_user
+      ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "talk_text"}
+      | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user)}
 

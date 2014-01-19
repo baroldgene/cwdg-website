@@ -1,5 +1,8 @@
 CwdgRails::Application.routes.draw do
-  resources :users, only: [:show, :edit, :update]
+
+  resources :users, only: [:show, :edit, :update] do
+    resources :talks, except: [:index, :show]
+  end
 
   root 'static_pages#home'
 
