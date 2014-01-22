@@ -45,21 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, January 21st, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, January 28th, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Lightning Talks!</span>
-        = link_to 'https://github.com/CWDG/talks/issues/3'
-          .presentation_resource_link Add your talk here!
+        | <span class="description">Styling your own website</span>
+        = link_to '#'
+          .presentation_resource_link Life without Bootstrap or Zurb Foundation
 
-      /.presentation
-      /  ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
-      /  ' <span class="time">8:00 <span>-</span></span>
-      /  | <span class="description">A look into Sessions</span>
-      /  = mail_to 'mnakhaleh@gmail.com'
-      /    .presentation_resource_link Presented by Marwan Nakhaleh
+      .presentation
+        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
+        ' <span class="time">8:00 <span>-</span></span>
+        | <span class="description">Protect yourself on the web.</span>
+        = link_to 'http://www.gnupg.org/gph/en/manual/book1.html'
+          .presentation_resource_link A first look into GPG and Encrpytion
 
 section.about
   .container
