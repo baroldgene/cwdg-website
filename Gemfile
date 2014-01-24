@@ -5,7 +5,6 @@ gem 'rails', '4.0.2'
 
 gem 'bcrypt-ruby',       '~> 3.1.1'
 gem 'bourbon',           '~> 3.1.8'
-gem 'cancan',           '~> 1.6.10'
 gem 'cocoon',            '~> 1.2.1'
 gem 'coffee-rails',      '~> 4.0.1'
 gem 'coveralls',         '~> 0.7.0', require: false
@@ -17,6 +16,7 @@ gem 'octokit',           '~> 2.5.1'
 gem 'omniauth',          '~> 1.1.4'
 gem 'omniauth-github',   '~> 1.1.1'
 gem 'pg',               '~> 0.17.0'
+gem "pundit",            '~> 0.2.1'
 gem "rufus-scheduler",   "~> 3.0.4"
 gem 'sass-rails',        '~> 4.0.1'
 gem 'slim-rails',        '~> 2.0.3'

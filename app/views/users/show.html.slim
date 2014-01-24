@@ -18,7 +18,7 @@ header.profile
     h1 #{@user.name}
     .container
       p
-        - if can? :update, @user
+        - if policy(@user).update?
           = link_to 'Edit Profile ', edit_user_path(current_user)
           = link_to 'Signout', signout_path
         - else
@@ -32,7 +32,7 @@ section.talks
   .container.talks_header
     ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
-    - if can? :create, Talk and @user == current_user
+    - if policy(Talk).create?
       ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "talk_text"}
       | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user)}
 

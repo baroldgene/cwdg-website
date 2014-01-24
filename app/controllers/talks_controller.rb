@@ -1,7 +1,5 @@
 class TalksController < ApplicationController
-  load_and_authorize_resource
-  # before_filter :set_talk, only: [:edit, :update, :destroy]
-  # authorize_resource
+  before_filter :set_talk, only: [:edit, :update, :destroy]
 
   def new
     @talk = Talk.new
@@ -11,12 +9,11 @@ class TalksController < ApplicationController
     @talk = Talk.new(talk_params)
     @talk.creator_id = current_user.id
 
-    respond_to do |format|
-      if @talk.save
-        format.html { redirect_to :back, notice: 'Talk was successfully create' }
-      else
-        format.html { redirect_to :back, alert: 'Talk failed' }
-      end
+    authorize @talk
+    if @talk.save
+      redirect_to current_user
+    else
+      render :new
     end
   end
 

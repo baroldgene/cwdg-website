@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_filter :set_user, only: [:show, :edit, :update]
-  authorize_resource only: [:edit, :update]
 
   def index
     @user = User.all
