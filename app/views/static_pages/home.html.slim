@@ -45,21 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, January 28th, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, February 4th, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Styling your own website</span>
-        = link_to '#'
-          .presentation_resource_link Life without Bootstrap or Zurb Foundation
+        | <span class="description">Intro to Laravel</span>
+        = link_to 'http://laravel.com/'
+          .presentation_resource_link with Paul Tela and Anand Capur
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">Protect yourself on the web.</span>
-        = link_to 'http://www.gnupg.org/gph/en/manual/book1.html'
-          .presentation_resource_link A first look into GPG and Encrpytion
+        | <span class="description">Jump start into Backbone JS</span>
+        = link_to 'http://backbonejs.org/'
+          .presentation_resource_link with Boyan Alexandrov
 
 section.about
   .container
