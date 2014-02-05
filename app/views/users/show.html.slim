@@ -25,7 +25,7 @@ header.profile
           = link_to 'GitHub', "http://github.com/#{@user.username}"
 
 section
-  .container
+  .container.bio
     p #{@user.bio}
 
 section.talks
@@ -33,6 +33,24 @@ section.talks
     ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
     - if policy(Talk).create?
-      ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "talk_text"}
-      | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user)}
+      ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "create_talk"}
+      | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user), class: "icon_createtalk"}
+
+  .container.indiv_talks.js-masonry data-masonry-options='{"gutter": 20}'
+    - @user.talks.each do |talk|
+      .talk_column id="#{talk.id}"
+        h1.talk_title  #{talk.title}
+        - if policy(talk).edit?
+          = link_to edit_user_talk_path(@user, talk), class: "edittalk_icon_link" do
+            = image_tag('edittalk.png', class: "icon_edittalk")
+
+          = link_to 'Edit', edit_user_talk_path(@user, talk), class: "edit_talk"
+
+          = link_to user_talk_path(@user, talk), class: "deletetalk_icon_link", data: { method: :delete, confirm: "Are you sure", remote: true, redirect_url: user_path(@user), talk_id: talk.id } do
+            = image_tag('deletetalk.png', class: "icon_deletetalk")
+
+          = link_to ' Delete', user_talk_path(@user, talk), data: { method: :delete, confirm: "Are you sure", remote: true, redirect_url: user_path(@user), talk_id: talk.id}, class: "delete_talk"
+
+        .talk_content
+          p #{talk.content}
 
