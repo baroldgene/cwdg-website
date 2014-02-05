@@ -22,7 +22,7 @@ gem 'sass-rails',        '~> 4.0.1'
 gem 'slim-rails',        '~> 2.0.3'
 gem 'simple_form',       '~> 3.0.0'
 gem 'therubyracer',     '~> 0.12.0', platforms: :ruby
-gem 'turbolinks'
+#gem 'turbolinks'
 gem 'uglifier',          '>= 2.3.0'
 gem 'unicorn',           '~> 4.8.0'
 

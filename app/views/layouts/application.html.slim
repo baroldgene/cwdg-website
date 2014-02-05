@@ -2,7 +2,7 @@ doctype html
 html
   head
     title Collegiate Web Developers
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "application", media: "all"
     = csrf_meta_tags
     = favicon_link_tag 'Icon.png',       rel: 'apple-touch-icon', size: '57x57',   type: 'image/png'
     = favicon_link_tag 'Icon-72.png',    rel: 'apple-touch-icon', size: '72x72',   type: 'image/png'
@@ -13,4 +13,4 @@ html
   body
     = yield
     = render 'layouts/footer'
-    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "application"
