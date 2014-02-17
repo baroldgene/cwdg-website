@@ -10,7 +10,7 @@ $link: #a76262
 
 body
   font-family: $reg_text, sans-serif
-  +animation (fade-in 1s)
+  height: 100%
 
 .container
   width: 94%
@@ -38,6 +38,7 @@ h2
   font-size: 24px
   margin-bottom: 20px
 
+// Header
 header
   background: image-url('header.jpg') no-repeat
   background-size: cover
@@ -52,11 +53,6 @@ header
     text-align: center
     font-size: 40px
     margin-bottom: 36px
-
-header.profile
-  @include retina-image(binding_light, 180px, $asset-pipeline: true)
-  background-repeat: repeat
-
 
 .profile_info
   img
@@ -82,29 +78,6 @@ header.profile
   font-weight: bold
   text-align: center
   color: $dark_text
-
-.talks
-  padding: 30px 0 10%
-  background-color: $dark_text
-  color: white
-  +clearfix
-
-.talks_header
-  p
-    font-family: $reg_text
-    color: white
-    font-size: 40px
-    margin-bottom: 0px
-    float: left
-  a
-    float: right
-    padding-right: 10px
-    color: #666666
-    margin-top: 13px
-    font-size: 15px
-    text-transform: uppercase
-  a.talk_text
-    margin-top: 16px
 
 
 .phrase
@@ -315,7 +288,6 @@ html.touch .nav_icon
   padding-bottom: 10px
   +clearfix
 
-
 .icon_person
   width: 28px
 
@@ -363,6 +335,97 @@ html.touch .nav_icon
       &:last-of-type
         margin-bottom: 30px
 
+// Talks
+
+.talks
+  // TODO fix this hacky shit
+  min-height: 30em
+  // this shit above
+  background: $dark_text
+  color: white
+  padding-top: 30px
+  padding-bottom: 10px
+
+  p
+    font-family: $reg_text
+    color: white
+    font-size: 40px
+    margin-bottom: 0px
+    float: left
+  a
+    font-family: $reg_text
+    font-size: 17px
+    // float: left
+    // float: right
+    margin-top: 15px
+    color: #666
+
+
+.edit_talk_link, .delete_talk_icon_link, .icon_deletetalk
+  float: left
+
+p.talks_title
+  font-family: $bold_text
+
+.indiv_talks
+  +clearfix
+
+.icon_talkbubble
+  width: 28px
+  float: left
+  margin-top: 10px
+  margin-right: 10px
+
+.icon_createtalk
+  float: right
+  width: 20px
+  margin-top: 13px
+  margin-right: 10px
+
+.edittalk_icon_link, .deletetalk_icon_link
+  float: left
+  padding-right: 10px
+
+.edit_talk, .delete_talk
+  float: left
+  padding-right: 10px
+  padding-top: 6px
+
+.icon_edittalk, .icon_deletetalk
+  width: 26px
+
+.talk_column
+  width: 48%
+  margin-bottom: 25px
+
+  p
+    font-size: 15px
+    text-align: left
+
+  h1
+    font-family: $bold_text
+    font-size: 24px
+    margin-bottom: -5px
+
+.talk_content
+  float: left
+  margin-top: 30px
+
+.create_talk
+  float: right
+  padding-right: 20px
+  padding-top: 4px
+
+.talk_title
+  h1
+    font-size: 20px
+  p
+    font-size: 12px
+
+.talks_header
+  margin-bottom: 70px
+
+//
 footer
   text-align: center
   p
