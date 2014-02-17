@@ -45,21 +45,20 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, February 11th, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, February 18th, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
+        | <span class="description">CSS animations with Borubon and SASS</span>
+        = link_to 'http://twitter.com/pixeljanitor'
+          .presentation_resource_link with Derek Briggs
+
+        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
+        ' <span class="time">7:45 <span>-</span></span>
         | <span class="description">Intro to Laravel</span>
         = link_to 'http://laravel.com/'
           .presentation_resource_link with Paul Tela and Anand Capur
-
-      .presentation
-        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
-        ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">To Be Determined</span>
-        = link_to 'http://twitter.com/ajgilbert'
-          .presentation_resource_link with Alan Gilbert
 
 section.about
   .container
