@@ -8,8 +8,6 @@ class TalksController < ApplicationController
 
     if current_user.nil?
       redirect_to root_path
-    else
-      redirect_to user_path(current_user)
     end
   end
 

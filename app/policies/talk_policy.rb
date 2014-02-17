@@ -19,7 +19,7 @@ class TalkPolicy
   end
 
   def update?
-    @talk.creator_id == @user.id or @user.admin?
+    @talk.creator_id == @user.id
   end
 
   def edit?    ; update? end
