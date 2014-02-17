@@ -1,4 +1,4 @@
-header.profile
+header style="background-color: rgba(90, 50, 49); background-image: url(data:image/svg+xml;base64,#{@pattern.base64_string});"
   .login_bar
     .container
       = link_to root_path
@@ -32,7 +32,7 @@ section.talks
   .container.talks_header
     ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
-    - if policy(Talk).create?
+    - if current_user.id == @user.id
       ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "create_talk"}
       | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user), class: "icon_createtalk"}
 
@@ -46,10 +46,10 @@ section.talks
 
           = link_to 'Edit', edit_user_talk_path(@user, talk), class: "edit_talk"
 
-          = link_to user_talk_path(@user, talk), class: "deletetalk_icon_link", data: { method: :delete, confirm: "Are you sure", remote: true, redirect_url: user_path(@user), talk_id: talk.id } do
+          = link_to [@user, talk], class: "deletetalk_icon_link", data: { method: :delete, confirm: "Are you sure", talk_id: talk.id } do
             = image_tag('deletetalk.png', class: "icon_deletetalk")
 
-          = link_to ' Delete', user_talk_path(@user, talk), data: { method: :delete, confirm: "Are you sure", remote: true, redirect_url: user_path(@user), talk_id: talk.id}, class: "delete_talk"
+          = link_to ' Delete', [@user, talk], method: :delete, data: { confirm: "Are you sure?" }, class: "delete_talk"
 
         .talk_content
           p #{talk.content}

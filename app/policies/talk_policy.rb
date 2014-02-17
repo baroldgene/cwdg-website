@@ -7,11 +7,22 @@ class TalkPolicy
     @talk = talk
   end
 
-  def create?  ; user.persisted?            end
-  def new?     ; create?                    end
+  #TODO fix new and create so that users can
+  #only see page to make talks for themselves
 
-  def update?  ; talk.creator_id == user.id end
-  def edit?    ; update?                    end
+  def create?
+    @talk.creator_id == @user.id
+  end
 
-  def destroy? ; false                      end
+  def new?
+    @user.persisted?
+  end
+
+  def update?
+    @talk.creator_id == @user.id or @user.admin?
+  end
+
+  def edit?    ; update? end
+  def destroy? ; update? end
+
 end

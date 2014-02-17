@@ -10,6 +10,7 @@ gem 'coffee-rails',      '~> 4.0.1'
 gem 'coveralls',         '~> 0.7.0', require: false
 gem 'draper',            '~> 1.3.0'
 gem 'friendly_id',       '~> 5.0.0'
+gem 'geo_pattern'
 gem 'jbuilder',          '~> 2.0.2'
 gem 'jquery-rails'
 gem 'octokit',           '~> 2.7.0'

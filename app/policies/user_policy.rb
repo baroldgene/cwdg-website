@@ -5,6 +5,9 @@ class UserPolicy < ApplicationPolicy
     end
   end
 
-  def update? ; record.user == user end
-
+  def update?
+    @record.user == @user
+  end
+  def edit?   ; update? end
+  def destroy? ;update? end
 end
