@@ -10,7 +10,7 @@ gem 'coffee-rails',      '~> 4.0.1'
 gem 'coveralls', require: false
 gem 'draper'
 gem 'friendly_id'
-gem 'geo_pattern',       github: 'tarebyte/geo_pattern'
+gem 'geo_pattern'
 gem 'jbuilder',          '~> 2.0.2'
 gem 'jquery-rails'
 gem 'octokit'
