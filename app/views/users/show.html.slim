@@ -32,7 +32,7 @@ section.talks
   .container.talks_header
     ' #{image_tag_with_at2x("talkbubble.png", class: "icon_bubble", retina: true)}
     | <p>Talks</p>
-    - if current_user.id == @user.id
+    - if !current_user.nil? && current_user.id == @user.id
       ' #{link_to 'Create Talk', new_user_talk_path(current_user), class: "create_talk"}
       | #{link_to (image_tag_with_at2x("createtalk.png")), new_user_talk_path(current_user), class: "icon_createtalk"}
 
