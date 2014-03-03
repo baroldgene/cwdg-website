@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 gem 'rails', '4.0.3'
 
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 gem 'bourbon'
 gem 'cocoon'
 gem 'coffee-rails',      '~> 4.0.1'

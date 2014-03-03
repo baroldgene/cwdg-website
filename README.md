@@ -8,7 +8,7 @@
 
 This is our latest web application for our group in
 order for us to manage our group better an automate
-certain tasks that I am terrible at doing. 
+certain tasks that I am terrible at doing.
 But yet still can't answer emails for me.
 
 ##Development
