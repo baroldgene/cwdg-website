@@ -45,14 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, February 25th, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, March 4th, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">Hack Night!!</span>
+        | <span class="description">Getting started with Less</span>
+        = link_to 'mailto:stephengacka@gmail.com'
+          .presentation_resource_link with Stephen Gacka
+
+      .presentation
+        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
+        ' <span class="time">8:00 <span>-</span></span>
+        | <span class="description">A look at Node.js</span>
         = link_to '#'
-          .presentation_resource_link Bring your laptops and projects, it's a coding frenzy!!
+          .presentation_resource_link with Brandon Mills and Paul Tela
 
 section.about
   .container
