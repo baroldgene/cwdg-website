@@ -45,21 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, March 4th, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, March 18th, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">A look at Node.js</span>
-        = link_to 'https://github.com/btmills'
-          .presentation_resource_link with Brandon Mills
+        | <span class="description">Less and CSS preprocessing</span>
+        = mail_to 'stephengacka@gmail.com'
+          .presentation_resource_link with Steve Gacka
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">A look at Socket.io</span>
-        = link_to 'https://github.com/arcdigital'
-          .presentation_resource_link with Anand Capur and Brandon Mills
+        | <span class="description">Git all of the things!</span>
+        = link_to 'http://git-scm.com'
+          .presentation_resource_link Git's official website
 
 section.about
   .container
@@ -87,8 +87,8 @@ section.getting_started
     p Before you attend your first meeting, it is recommended you follow our <a href="#">Developer Setup Tutorial</a> so you can be productive as soon as you start.
 
     p You may also want to familiarize yourself with the <a href="http://ruby-lang.org">Ruby Programming Language</a> or look over our past meeting materials to familarize yourself with the topics you have missed.
-    
-    p We hang out in <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a>, an IRC channel on Freenode. Feel free to ask questions and join in discussions. 
+
+    p We hang out in <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a>, an IRC channel on Freenode. Feel free to ask questions and join in discussions.
 
     p If you do nothing else, <a href="http://eepurl.com/GBJFv">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.
 
