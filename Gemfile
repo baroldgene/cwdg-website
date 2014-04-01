@@ -18,6 +18,7 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'pg'
 gem "pundit"
+gem 'rubocop'
 gem "rufus-scheduler"
 gem 'sass-rails'
 gem 'slim-rails'

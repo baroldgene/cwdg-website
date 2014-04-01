@@ -45,21 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, March 25th, 2014</span>
+        h1 Next Meeting: <span class="date">Tuesday, April 1st, 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">A look at Quintus, and HTML5 and JS Game engine</span>
-        = mail_to 'https://github.com/MarwanNakhaleh'
-          .presentation_resource_link with Marwan Nakhaleh
+        | <span class="description">Hack Night!</span>
+        = link_to '#'
+          .presentation_resource_link bring your laptops
 
-      .presentation
-        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
-        ' <span class="time">8:00 <span>-</span></span>
-        | <span class="description">GitHub's Boxen project</span>
-        = link_to 'https://boxen.github.com'
-          .presentation_resource_link The Boxen Homepage
+      /.presentation
+      /  ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
+      /  ' <span class="time">8:00 <span>-</span></span>
+      /  | <span class="description">GitHub's Boxen project</span>
+      /  = link_to 'https://boxen.github.com'
+      /    .presentation_resource_link The Boxen Homepage
 
 section.about
   .container
