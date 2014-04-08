@@ -16,7 +16,7 @@ But yet still can't answer emails for me.
 ###Technologies Used:
 
 * Framework
-  * [Ruby on Rails](http://rubyonrails.org/) w/ [Ruby 2.0](http://ruby-lang.org)
+  * [Ruby on Rails](http://rubyonrails.org/) w/ [Ruby 2.1.0](http://ruby-lang.org)
 * Authentication
   * [Omniauth](https://github.com/intridea/omniauth)
   * [Omniauth-GitHub](https://github.com/intridea/omniauth-github)
@@ -28,6 +28,10 @@ But yet still can't answer emails for me.
 
 This application runs Postgresql both locally and on Heroku.
 Please have this setup before you continue on.
+
+I also have `config/database.yml` gitignored since everyone's machine is different.
+Make sure you add this to your project before running!
+
 Once you have that installed you can run:
 
     bundle install
@@ -37,8 +41,28 @@ Once you have that installed you can run:
 
     rails server
 
-The app runs on port 3000 and the GitHub Api key is stored in a ignored YAML file, please contact [@tarebyte](http://github.com/tarebyte)
+The app runs on port 3000, we use [dotenv](http://github.com/bkeepers/dotenv), please contact [@tarebyte](http://github.com/tarebyte)
 to get this. We have two different Oauth keys, one for production and one for development.
+
+###Boxen Configuration
+
+I'm probably the only person that uses [Boxen](http://boxen.github.com),
+but if you do use it, this is the configuration file I use.
+
+```puppet
+# module/projects/manifests/cwdg.pp
+
+class projects::cwdg {
+
+  boxen::project { "cwdg-website":
+    ruby       => '2.1.0',
+    postgresql => true,
+    nginx      => true,
+    source     => "CWDG/cwdg-website",
+    dir        => "${boxen::config::srcdir}/CWDG/cwdg-website"
+  }
+}
+```
 
 ##Contributing
 

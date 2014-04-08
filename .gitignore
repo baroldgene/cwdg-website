@@ -15,10 +15,6 @@
 /log/*.log
 /tmp
 
-# API Keys
-config/github.yml
-config/newrelic.yml
-
 # MISC
 doc/
 *.swp
@@ -28,8 +24,11 @@ doc/
 .idea
 .secret
 .rvmrc
+.env
 
 coverage/
+
+config/database.yml
 
 # Zeus
 custom_plan.rb
