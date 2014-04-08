@@ -50,7 +50,6 @@ ActiveRecord::Schema.define(version: 20140124015319) do
     t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "is_lightning_talk"
   end
 
   create_table "users", force: true do |t|
