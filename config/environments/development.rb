@@ -26,10 +26,4 @@ CwdgRails::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-
-  github = YAML.load_file("config/github.yml")
-
-  ENV['GITHUB_KEY']         = github[:public_key]
-  ENV['GITHUB_SECRET']      = github[:secret_key]
-  ENV['GITHUB_ADMIN_TOKEN'] = github[:admin_token]
 end
