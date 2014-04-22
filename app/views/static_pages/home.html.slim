@@ -45,21 +45,21 @@ section.info
     .meeting
       .next_meeting
         ' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
-        h1 Next Meeting: <span class="date">Tuesday, April 15th, 2014</span>
+        h1 Next Meeting: <span class="date">Autumn 2014</span>
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
         ' <span class="time">7:00 <span>-</span></span>
-        | <span class="description">All of the Things! A final Ruby Presentation</span>
-        = link_to 'https://github.com/tarebyte'
-          .presentation_resource_link given by Mark Tareshawty
-
-      .presentation
-        ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
-        ' <span class="time">8:05 <span>-</span></span>
-        | <span class="description">Meeting with the Business Builder's Club</span>
+        | <span class="description">See you then</span>
         = link_to '#'
-          .presentation_resource_link at the Union
+          .presentation_resource_link bring your laptops!
+      /
+      /.presentation
+      /  ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
+      /  ' <span class="time">8:05 <span>-</span></span>
+      /  | <span class="description">Meeting with the Business Builder's Club</span>
+      /  = link_to '#'
+      /    .presentation_resource_link at the Union
 
 section.about
   .container
