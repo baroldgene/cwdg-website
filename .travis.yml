@@ -8,7 +8,7 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rake
 before_script:
-  - cp config/database.travis.yml config/database.yml
+  - cp config/database.yml.travis config/database.yml
   - psql -c 'create database cwdg-website_test;' -U postgres
 notifications:
   email:
