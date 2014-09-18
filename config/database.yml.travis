@@ -5,9 +5,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
+  database: cwdg-website_development
 
 test:
   <<: *defaults
+  database: cwdg-website_test
 
 production:
   <<: *defaults
