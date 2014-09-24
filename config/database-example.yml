@@ -1,0 +1,15 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *defaults
+  database: cwdg-website_development
+
+test:
+  <<: *defaults
+  database: cwdg-website_test
+
+production:
+  <<: *defaults
