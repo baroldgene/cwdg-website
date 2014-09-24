@@ -44,10 +44,11 @@ section.info
 
     .meeting
       .next_meeting
-        =#' #{image_tag_with_at2x("calendar.png", class: "icon_calendar")}
         h1
           | Next Meeting:
-          span.date = @next_date.strftime("%A, %B #{@next_date.day.ordinalize}")
+          span.date
+            = " #{@next_date.strftime('%A, %B')}"
+            = " #{ @next_date.day.ordinalize }"
 
       .presentation
         ' #{image_tag_with_at2x("clock.png", class: "icon_clock")}
