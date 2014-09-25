@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.0
+  - 2.1.1
 env:
   - DB=postgresql
 script:
@@ -8,8 +8,9 @@ script:
   - bundle exec rake db:test:prepare
   - bundle exec rake
 before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database cwdg-website_test;' -U postgres
+  - cp config/database.travis.yml config/database.yml
+  - psql -c 'create database cwdg_test;' -U postgres
 notifications:
   email:
     - cwdgosu@gmail.com
+    - tarebyte@gmail.com
