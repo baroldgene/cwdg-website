@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
-gem 'rails', '4.0.3'
+ruby '2.1.3'
+gem 'rails', '4.0.10'
 gem 'dotenv-rails'
 
 gem 'bcrypt'
 gem 'bourbon'
 gem 'cocoon'
-gem 'coffee-rails',      '~> 4.0.1'
-gem 'coveralls', require: false
+gem 'coffee-rails',      '~> 4.0.0'
 gem 'draper'
 gem 'friendly_id'
 gem 'geo_pattern'
@@ -19,26 +18,25 @@ gem 'omniauth'
 gem 'omniauth-github'
 gem 'pg'
 gem "pundit"
-gem 'rubocop'
 gem "rufus-scheduler"
-gem 'sass-rails'
+gem 'sass-rails',       '~> 4.0.2'
 gem 'slim-rails'
 gem 'simple_form'
 gem 'therubyracer',     '~> 0.12.1', platforms: :ruby
-gem 'uglifier'
+gem 'uglifier',         '>= 1.3.0'
 gem 'unicorn'
 
 group :development, :test do
   gem 'awesome_print'
   gem 'better_errors'
-  gem 'pry-plus'
+  gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'quiet_assets'
 end
 
 group :doc do
-  gem 'sdoc', '~> 0.4.0', require: false
+  gem 'sdoc', require: false
 end
 
 group :test do
