@@ -2,7 +2,7 @@ postgresql: &postgresql
   adapter: postgresql
   username: postgresql
   password:
-  database: cwdg-website_<%= Rails.env %>
+  database: cwdg_<%= Rails.env %>
   min_messages: ERROR
 
 defaults: &defaults
