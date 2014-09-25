@@ -42,7 +42,6 @@ end
 group :test do
   gem 'capybara'
   gem 'factory_girl_rails'
-  gem 'selenium-webdriver'
 end
 
 group :production do
