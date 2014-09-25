@@ -32,6 +32,8 @@ Please have this setup before you continue on.
 I also have `config/database.yml` gitignored since everyone's machine is different.
 Make sure you add this to your project before running!
 
+`cp config/database-example.yml config/database.yml`
+
 Once you have that installed you can run:
 
     bundle install
