@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.0
+  - 2.1.1
 env:
   - DB=postgresql
 script:
@@ -13,3 +13,4 @@ before_script:
 notifications:
   email:
     - cwdgosu@gmail.com
+    - tarebyte@gmail.com
