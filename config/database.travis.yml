@@ -1,6 +1,6 @@
 postgresql: &postgresql
   adapter: postgresql
-  username: postgresql
+  username: postgres
   password:
   database: cwdg_<%= Rails.env %>
   min_messages: ERROR
