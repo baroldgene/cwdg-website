@@ -15,6 +15,10 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
+  test 'appends size onto gravatar_url' do
+    assert_equal @user.gravatar_url_of_size(80), 'https://avatars.githubusercontent.com/u/564113?v=2&s=80'
+  end
+
   test 'username should be present' do
     @user.username = ''
     assert_not @user.valid?

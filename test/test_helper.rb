@@ -6,12 +6,12 @@ Minitest::Reporters.use!
 
 OmniAuth.config.test_mode = true
 omniauth_hash = { 'provider' => 'github',
-                  'uid' => '12345',
+                  'uid' => '12346',
                   'info' => {
-                      'name'     => 'Mark Tareshawty',
-                      'email'    => 'tarebyte@gmail.com',
-                      'nickname' => 'tarebyte',
-                      'image'    => 'https://avatars.githubusercontent.com/u/564113?v=2'
+                      'name'     => 'Example User',
+                      'email'    => 'example_user@gmail.com',
+                      'nickname' => 'example_user',
+                      'image'    => 'https://avatars.githubusercontent.com/u/4622588?v=2'
                   }}
 
 OmniAuth.config.add_mock(:github, omniauth_hash)
