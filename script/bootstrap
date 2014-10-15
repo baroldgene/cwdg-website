@@ -1,1 +1,24 @@
 #!/bin/bash
+set -e
+
+if [ ! -f config/database.yml ]
+then
+  printf "Copying config/database-example.yml -> config/database.yml\n"
+  printf "You may need to configure this...\n"
+  cp config/database-example.yml config/database.yml
+fi
+
+bundle install
+
+printf "Looking for tables\n"
+if [ "$(psql -l | grep cwdg_development | wc -l)" -eq 0 ] || [ "$(psql -l | grep cwdg_test | wc -l)" -eq 0 ]
+then
+  printf "Creating table(s)...\n"
+  bundle exec rake db:create
+else
+  printf "Found them!\n"
+fi
+
+bundle exec rake db:migrate
+
+printf "Done!\n"
