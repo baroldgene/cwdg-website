@@ -12,6 +12,8 @@ gem 'jquery-rails', '~> 4.0.0.beta2'
 
 gem 'pg', '~> 0.17.1'
 
+gem 'omniauth-github', '~> 1.1.2'
+
 gem 'turbolinks', '~> 2.4.0'
 
 gem 'sass-rails', '~> 5.0.0.beta1'
@@ -21,6 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'unicorn',        '~> 4.8.3'
 
 group :development, :test do
+  gem 'awesome_print',     '~> 1.2.0'
   gem 'better_errors',     '~> 2.0.0'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'pry-rails',         '~> 0.3.2'
