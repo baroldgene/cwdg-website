@@ -22,7 +22,10 @@ Please have this setup before you continue on.
 ./script/bootstrap
 
 # Run the app
-./bin/rails server
+bundle exec rails server
+
+# Run the tests
+bundle exec rake test
 ```
 
 The app runs on port 3000, we use [dotenv](http://github.com/bkeepers/dotenv), please contact [@tarebyte](http://github.com/tarebyte)
