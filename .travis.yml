@@ -13,4 +13,3 @@ before_script:
 notifications:
   email:
     - cwdgosu@gmail.com
-    - tarebyte@gmail.com
