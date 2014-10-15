@@ -1,0 +1,7 @@
+.octocat {
+  width: 23px;
+  margin-left: 4px;
+  margin-bottom: -6px;
+  @include transition (all .4s ease-in-out);
+  @include transform (rotate(0));
+}

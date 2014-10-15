@@ -1,0 +1,22 @@
+.logo-container {
+  @include media($tablet) {
+    @include span-columns(5);
+    span {
+      display: none;
+    }
+  }
+
+  @include media($mobile) {
+    @include span-columns(2);
+  }
+}
+
+.user-auth-container {
+  @include media($tablet) {
+    @include span-columns(3);
+  }
+
+  @include media($mobile) {
+    @include span-columns(2);
+  }
+}

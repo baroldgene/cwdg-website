@@ -1,0 +1,24 @@
+<header>
+  <div class="user-auth-navbar">
+    <div class="container">
+      <div class="logo-container">
+        <%= link_to root_path do %>
+          <h1 class="logo">< \ /\ / > <span>COLLEGIATE WEB DEVELOPERS</span></h1>
+        <% end %>
+      </div>
+      <div class="user-auth-container">
+        <% if user_signed_in? %>
+          <%= link_to user_path(current_user) do %>
+            <%= current_user.name %>
+          <% end %>
+        <% else %>
+          <%= link_to login_path do %>
+            <span>Sign in with GitHub</span>
+            <%= image_tag_with_at2x("octocat.png", class: "octocat") %>
+          <% end %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

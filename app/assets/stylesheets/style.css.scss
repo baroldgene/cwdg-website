@@ -1,0 +1,85 @@
+body {
+  font-family: $reg_text, sans-serif;
+}
+
+a {
+  font-family: $bold_text;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+  font-family: $bold_text;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+header {
+  @include fill-parent;
+  background: image-url('header.jpg');
+  background-position: 50% 50%;
+  max-height: 350px;
+  overflow: auto;
+
+  h1 {
+    color: white;
+    font-size: 40px;
+  }
+}
+
+.container {
+  @include outer-container;
+}
+
+.logo-container {
+  @include span-columns(9);
+
+  h1 {
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-family: $black_text;
+
+    span {
+      font-family: $bold_text;
+      position: relative;
+      font-size: 20px;
+      top: -3px;
+    }
+  }
+
+}
+
+.user-auth-container {
+  @include span-columns(3);
+  padding-top: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  a {
+    float: right;
+  }
+
+  &:hover > a > .octocat {
+    @include transform (rotate(360deg));
+  }
+}
+
+.user-auth-navbar {
+  @include fill-parent;
+  color: white;
+  background: rgba(white, .1);
+  border-bottom: 4px solid rgba(white, .14);
+  padding: 8px 0 12px;
+  margin-bottom: 56px;
+
+  a {
+    color: white;
+  }
+}
