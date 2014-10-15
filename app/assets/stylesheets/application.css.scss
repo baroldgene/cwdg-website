@@ -17,7 +17,7 @@
 @import 'bourbon';
 
 /*== Use in development only! ==*/
-@import 'visual-grid';
+@import 'visual_grid';
 /*==============================*/
 
 @import 'grid-settings';
@@ -25,5 +25,6 @@
 @import 'fonts';
 @import 'variables';
 @import 'icons';
+@import 'components';
 @import 'style';
 @import 'media_queries';

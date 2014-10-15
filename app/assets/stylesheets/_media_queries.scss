@@ -1,3 +1,27 @@
+header {
+  @include media($tablet) {
+    padding-bottom: 46px;
+    h1 {
+      font-size: 34px;
+    }
+  }
+}
+
+.button {
+  @include media($tablet) {
+    margin-bottom: 0px;
+  }
+
+  @include media($mobile) {
+    margin-bottom: 0px;
+  }
+}
+
+.introduction {
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+}
 .logo-container {
   @include media($tablet) {
     @include span-columns(5);
@@ -18,5 +42,15 @@
 
   @include media($mobile) {
     @include span-columns(2);
+  }
+}
+
+.user-auth-navbar {
+  @include media($tablet) {
+    margin-bottom: 32px;
+  }
+
+  @include media($mobile) {
+    margin-bottom: 20px;
   }
 }
