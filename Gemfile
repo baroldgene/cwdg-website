@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 ruby '2.1.1'
 gem 'rails', '4.2.0.beta2'
 
+gem 'bourbon', '~> 4.0.2'
+
 gem 'coffee-rails', '~> 4.1.0'
 
 gem 'dotenv-rails', '~> 1.0.2'
@@ -11,6 +13,8 @@ gem 'jbuilder',     '~> 2.2.2'
 gem 'jquery-rails', '~> 4.0.0.beta2'
 
 gem 'pg', '~> 0.17.1'
+
+gem 'neat', '~> 1.6.0'
 
 gem 'omniauth-github', '~> 1.1.2'
 
