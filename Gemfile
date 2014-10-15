@@ -18,6 +18,7 @@ gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'uglifier', '>= 1.3.0'
+gem 'unicorn',        '~> 4.8.3'
 
 group :development, :test do
   gem 'better_errors',     '~> 2.0.0'
@@ -33,5 +34,4 @@ end
 
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
-  gem 'unicorn',        '~> 4.8.3'
 end
