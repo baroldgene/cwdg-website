@@ -1,14 +1,26 @@
+$bold_text: 'proxima_nova_rgbold';
+$black_text: 'proxima_novablack';
+$regular_text: 'proxima_nova_rgregular';
+
+$dark_text: #333333;
+$link: #a76262;
+
 body {
-  font-family: $reg_text, sans-serif;
+  font-family: $regular_text, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: #333;
 }
 
 a {
   font-family: $bold_text;
+  font-weight: normal;
   text-decoration: none;
 }
 
 h1 {
   font-size: 40px;
+  font-weight: normal;
 }
 
 h2 {
@@ -36,6 +48,15 @@ header {
 
 section {
   @include fill-parent();
+  padding-top: 30px;
+
+  a {
+    color: #A76262;
+  }
+
+  p {
+    font-size: 20px;
+  }
 
   &.dark {
     background-color: $dark_text;
@@ -45,6 +66,33 @@ section {
 
 .container {
   @include outer-container;
+}
+
+.getting-started {
+  background: image-url('bottom.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  a {
+    color: white;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.info-column {
+  @include span-columns(4);
+  @include omega(3n);
+
+  img {
+    margin-left: 45%;
+  }
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .introduction {
@@ -80,7 +128,7 @@ section {
 
 .user-auth-container {
   @include span-columns(3);
-  padding-top: 8px;
+  padding-top: 2px;
   font-size: 14px;
   text-transform: uppercase;
 

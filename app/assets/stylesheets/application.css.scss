@@ -17,13 +17,12 @@
 @import 'bourbon';
 
 /*== Use in development only! ==*/
-// @import 'visual_grid';
+@import 'visual_grid';
 /*==============================*/
 
 @import 'grid-settings';
 @import 'neat';
 @import 'fonts';
-@import 'variables';
 @import 'icons';
 @import 'components';
 @import 'style';

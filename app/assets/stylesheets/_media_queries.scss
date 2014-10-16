@@ -20,8 +20,15 @@ header {
 .introduction {
   @include media($tablet) {
     @include span-columns(6);
+    @include shift(1);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+    @include shift(0);
   }
 }
+
 .logo-container {
   @include media($tablet) {
     @include span-columns(5);
