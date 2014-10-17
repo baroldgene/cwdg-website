@@ -1,14 +1,13 @@
 CwdgRails::Application.routes.draw do
 
+  resources :projects
+
   resources :users, only: [:show, :edit, :update] do
     resources :talks, except: [:index, :show]
   end
 
-  resources :projects
-
   root 'static_pages#home'
 
-  match 'about',                   to: 'static_pages#about',             via: :get
   match 'members',                 to: 'users#index',                    via: :get
 
   match 'auth/:provider/callback', to: 'sessions#create',                via: :get
