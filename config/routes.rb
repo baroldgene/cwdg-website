@@ -1,5 +1,7 @@
 CwdgRails::Application.routes.draw do
 
+  resources :projects
+
   resources :users, only: [:show, :edit, :update] do
     resources :talks, except: [:index, :show]
   end
