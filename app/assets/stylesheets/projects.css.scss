@@ -35,6 +35,7 @@ div.subheader {
 }
 
 .projectViewer {
+  text-align: center;
   height: 260px;
   margin:0;
   padding:0;
@@ -42,20 +43,42 @@ div.subheader {
 
 .arrowLeft {
   vertical-align: top;
-  margin-top: 100px;
-  margin-right:10px;
+  margin-top: 130px;
+  margin-right: 15px;
+  margin-left: 25px;
 }
 
 .arrowRight {
   vertical-align: top;
-  margin-top: 100px;
-  margin-left:10px;
+  margin-top: 130px;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+.triggerL {
+  vertical-align: top;
+  display: inline-block;
+  height: 280px;
+  margin-top: -20px;
+  background-color: white;
+  border-left: 1px solid lightgray;
+  //border-right: 1px solid dimgray;
+}
+
+.triggerR {
+  vertical-align: top;
+  display: inline-block;
+  height: 280px;
+  margin-top: -20px;
+  background-color: white;
+  //border-left: 1px solid dimgray;
+  border-right: 1px solid lightgray;
 }
 
 .scroll {
   display: inline-block;
-  max-width: 900px;
-  height:240px;
+  max-width: 850px;
+  height: 240px;
   overflow: hidden;
   white-space: nowrap;
 }

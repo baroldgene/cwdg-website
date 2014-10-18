@@ -8,31 +8,31 @@ $(document).ready(function() {
     $("p[id='project3']").hide();
     $("p[id='project4']").hide();
     $('#hover').hide();
-    $('.arrowLeft').on({
+    $(".triggerL, .arrowLeft").on({
         'mouseover' : function() {
-            $(this).attr('src', '/assets/arrowLeft_hover.jpg');
+            $('.arrowLeft').attr('src', '/assets/arrowLeft_hover.jpg');
             var leftPos = $('.scroll').scrollLeft();
-            $(".scroll").animate({scrollLeft: leftPos - 400}, 1000);
+            $(".scroll").animate({scrollLeft: leftPos - 500}, 900);
         },
         'mouseout' : function() {
-            $(this).attr('src', '/assets/arrowLeft.jpg');
+            $('.arrowLeft').attr('src', '/assets/arrowLeft.jpg');
         }
     });
-    $('.arrowRight').on({
+    $(".triggerR, .arrowRight").on({
         'mouseover' : function() {
-            $(this).attr('src', '/assets/arrowRight_hover.jpg');
+            $('.arrowRight').attr('src', '/assets/arrowRight_hover.jpg');
             var leftPos = $('.scroll').scrollLeft();
-            $(".scroll").animate({scrollLeft: leftPos + 400}, 1000);
+            $(".scroll").animate({scrollLeft: leftPos + 500}, 900);
         },
         'mouseout' : function() {
-            $(this).attr('src', '/assets/arrowRight.jpg');
+            $('.arrowRight').attr('src', '/assets/arrowRight.jpg');
         }
     });
     $('.sample').on({
         'mouseover' : function() {
             $('.sample').stop().fadeTo('slow', 1);
             $("p").stop().hide();
-            $(this).stop().fadeTo('fast', 0.6);
+            $(this).stop().fadeTo('slow', 0.6);
             var height = $(this).height();
             $(this).animate(height + 100);
             var selection = $(this).attr("id");
