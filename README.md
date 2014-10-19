@@ -1,8 +1,6 @@
 #&lt;CWDG /&gt; Website
 
-[![Build Status](https://travis-ci.org/CWDG/cwdg-website.png)](https://travis-ci.org/CWDG/cwdg-website)
-[![Code Climate](https://codeclimate.com/github/CWDG/psychic-octo-wallhack.png)](https://codeclimate.com/github/CWDG/psychic-octo-wallhack)
-[![Coverage Status](https://coveralls.io/repos/CWDG/psychic-octo-wallhack/badge.png)](https://coveralls.io/r/CWDG/psychic-octo-wallhack)
+[![Build Status](https://travis-ci.org/CWDG/cwdg-website.svg)](https://travis-ci.org/CWDG/cwdg-website)
 
 ##Description
 
@@ -16,7 +14,7 @@ But yet still can't answer emails for me.
 ###Technologies Used:
 
 * Framework
-  * [Ruby on Rails](http://rubyonrails.org/) w/ [Ruby 2.1.0](http://ruby-lang.org)
+  * [Ruby on Rails](http://rubyonrails.org/) w/ [Ruby 2.1.1](http://ruby-lang.org)
 * Authentication
   * [Omniauth](https://github.com/intridea/omniauth)
   * [Omniauth-GitHub](https://github.com/intridea/omniauth-github)
@@ -31,6 +29,8 @@ Please have this setup before you continue on.
 
 I also have `config/database.yml` gitignored since everyone's machine is different.
 Make sure you add this to your project before running!
+
+`cp config/database-example.yml config/database.yml`
 
 Once you have that installed you can run:
 
@@ -55,7 +55,7 @@ but if you do use it, this is the configuration file I use.
 class projects::cwdg {
 
   boxen::project { "cwdg-website":
-    ruby       => '2.1.0',
+    ruby       => '2.1.1',
     postgresql => true,
     nginx      => true,
     source     => "CWDG/cwdg-website",
