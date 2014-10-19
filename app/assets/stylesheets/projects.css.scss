@@ -73,12 +73,14 @@ div.subheader {
   background-color: white;
   //border-left: 1px solid dimgray;
   border-right: 1px solid lightgray;
+  margin-top: 100px;
+  margin-left:10px;
 }
 
 .scroll {
   display: inline-block;
-  max-width: 850px;
-  height: 240px;
+  max-width: 900px;
+  height:240px;
   overflow: hidden;
   white-space: nowrap;
 }

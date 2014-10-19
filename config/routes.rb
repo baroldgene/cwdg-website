@@ -6,8 +6,6 @@ CwdgRails::Application.routes.draw do
     resources :talks, except: [:index, :show]
   end
 
-  resources :projects
-
   root 'static_pages#home'
 
   match 'members',                 to: 'users#index',                    via: :get
