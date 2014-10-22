@@ -10,13 +10,23 @@ class TutorialTest < ActiveSupport::TestCase
     assert @tutorial.valid?
   end
 
-  test 'name should be present' do
-    @tutorial.name = ''
+  test 'content should be present' do
+    @tutorial.content = ''
     assert_not @tutorial.valid?
   end
 
-  test 'content should be present' do
-    @tutorial.content = ''
+  test 'file_name should be present' do
+    @tutorial.file_name = ''
+    assert_not @tutorial.valid?
+  end
+
+  test 'sha should be present' do
+    @tutorial.sha = ''
+    assert_not @tutorial.valid?
+  end
+
+  test 'title should be present' do
+    @tutorial.title = ''
     assert_not @tutorial.valid?
   end
 end

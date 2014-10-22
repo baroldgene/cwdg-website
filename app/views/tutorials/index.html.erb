@@ -2,7 +2,7 @@
   <h1>Tutorials</h1>
   <ul>
     <% @tutorials.each do |tutorial| %>
-      <li><%= link_to tutorial.name, tutorial_path(tutorial) %></li>
+      <li><%= link_to tutorial.title, tutorial_path(tutorial) %></li>
     <% end %>
   </ul>
 </div>

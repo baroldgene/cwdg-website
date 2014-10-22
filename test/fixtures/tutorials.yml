@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 vagrant_intro:
-  name: vagrant-intro
+  file_name: vagrant-intro.md
+  sha: 744a01b55be2a912a821ab6c070460723e533aa2
+  title: Vagrant Intro
   content: |
     # Intro to Vagrant
 
