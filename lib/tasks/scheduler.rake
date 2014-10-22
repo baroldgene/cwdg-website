@@ -2,6 +2,13 @@ require 'open-uri'
 
 desc 'Tasks that deal with the CWDG tutorials'
 namespace :tutorials do
+  desc 'Remove all tutorials in the DB'
+  task destroy_all: :environment do
+    puts "Destroying all tutorials..."
+    Tutorial.destroy_all
+    puts "Done!"
+  end
+
   desc 'Sync with CWDG/tutorials'
   task sync: :environment do
     github_tutorials = Octokit.contents('CWDG/tutorials').keep_if do |file|
@@ -17,21 +24,22 @@ namespace :tutorials do
 
     # Create or Update Tutorial(s)
     github_tutorials.each do |file|
-      begin
-        tutorial = Tutorial.find_by(file_name: file[:name])
-      rescue ActiveRecord::RecordNotFound
-        puts "Creating #{file[:name]}..."
-        Tutorial.new(file_name: file[:name],
-                     content:   get_tutorial_content(file[:name]),
-                     sha:       file[:sha],
-                     title:     capitalize_all(file[:name][0..-4])).save
+      file_name = file[:name]
+      sha       = file[:sha]
+      title     = capitalize_all(file_name[0..-4])
+      tutorial  = Tutorial.find_by(file_name: file[:name])
+
+      if tutorial.nil?
+        puts "Creating #{title}..."
+        Tutorial.new(file_name: file_name,
+                     content:   get_tutorial_content(file_name),
+                     sha:       sha,
+                     title:     title).save
         puts "Done!"
-      else
-        if tutorial.sha != file[:sha]
-          puts "Updating #{file[:name]}..."
-          tutorial.update_attribute(:content, get_tutorial_content(file[:name]))
-          puts "Done!"
-        end
+      elsif tutorial.sha != file[:sha]
+        puts "Updating #{title}..."
+        tutorial.update_attribute(:content, get_tutorial_content(file_name))
+        puts "Done!"
       end
     end
   end
