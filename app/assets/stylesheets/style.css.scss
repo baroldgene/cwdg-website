@@ -57,8 +57,11 @@ section {
   }
 }
 
+#meeting-and-navigation {
+  padding-top: 0px;
+}
+
 .about-mobile {
-  // visibility: hidden;
   display: none;
 }
 
@@ -130,8 +133,10 @@ section {
 
 .nav {
   font-family: $bold_text;
+  padding-bottom: 20px;
   margin-bottom: 30px;
   text-align: center;
+  border-bottom: 2px solid #eee2e2;
 
   .nav-item {
     @include span-columns(4);
