@@ -59,6 +59,7 @@ section {
 
 #meeting-and-navigation {
   padding-top: 0px;
+  padding-bottom: 15px;
 }
 
 .about-mobile {
@@ -73,7 +74,7 @@ section {
   @include outer-container;
 }
 
-.getting-started {
+#getting-started {
   background: image-url('bottom.jpg') no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -131,6 +132,10 @@ section {
 
 }
 
+.meeting-date {
+  font-family: $bold_text;
+}
+
 .nav {
   font-family: $bold_text;
   padding-bottom: 20px;
@@ -151,6 +156,11 @@ section {
       }
     }
   }
+}
+
+.presentation {
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .user-auth-container {

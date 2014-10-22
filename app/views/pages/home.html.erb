@@ -9,7 +9,7 @@
     </div>
 
     <div class="nav-item">
-      <%= link_to '#' do %>
+      <%= link_to about_path do %>
         <%= image_tag_with_at2x("about.png", class: "icon-about-us") %>
         <span class="about-large">About Us</span>
         <span class="about-mobile">About</span>
@@ -27,6 +27,12 @@
   <div class="container next-meeting">
     <%= image_tag_with_at2x("calendar.png", class: "icon-calendar") %>
     <h1>Next Meeting: <span class="meeting-date">Wednesday, October 22nd, 2014</span></h1>
+
+    <div class="presentation">
+      <%= image_tag_with_at2x("clock.png", class: "icon-clock") %>
+      <span>7:00<span>-</span></span>
+      <span>Projects! Week 7</span>
+    </div>
   </div>
 </section>
 
@@ -52,7 +58,7 @@
   </div>
 </section>
 
-<section class="getting-started">
+<section id="getting-started">
   <div class="container">
     <h2>How do I get started?</h2>
 

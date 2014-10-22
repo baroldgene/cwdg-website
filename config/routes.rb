@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
+  get '/about' => 'pages#about'
+
   get '/auth/failure'            => 'sessions#failure'
   get '/auth/:provider/callback' => 'sessions#create'
   get '/login'                   => 'sessions#new',     as: :login
