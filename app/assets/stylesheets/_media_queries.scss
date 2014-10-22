@@ -7,6 +7,21 @@ header {
   }
 }
 
+.about-large {
+  @include media($tablet) {
+    display: none;
+  }
+}
+
+.about-mobile {
+  @include media($tablet) {
+    display: inline;
+  }
+
+  @include media($mobile) {
+    display: none;
+  }
+}
 .button {
   @include media($tablet) {
     margin-bottom: 0px;

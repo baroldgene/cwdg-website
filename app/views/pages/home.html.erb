@@ -1,10 +1,27 @@
 <%= render 'pages/header' %>
 <section>
   <div class="container nav">
-    <a class="nav-item">Hello</a>
-    <a class="nav-item">Hello</a>
-    <a class="nav-item">Hello</a>
-    <a class="nav-item">Hello</a>
+    <div class="nav-item">
+      <%= link_to '#' do %>
+        <%= image_tag_with_at2x("calendar-mini.png", class: "icon-calendar-mini") %>
+        <span>Meetings</span>
+      <% end %>
+    </div>
+
+    <div class="nav-item">
+      <%= link_to '#' do %>
+        <%= image_tag_with_at2x("about.png", class: "icon-about-us") %>
+        <span class="about-large">About Us</span>
+        <span class="about-mobile">About</span>
+      <% end %>
+    </div>
+
+    <div class="nav-item">
+      <%= link_to '#' do %>
+        <%= image_tag_with_at2x("tutorials.png", class: "icon-tutorials") %>
+        <span>Tutorials</span>
+      <% end %>
+    </div>
   </div>
 </section>
 

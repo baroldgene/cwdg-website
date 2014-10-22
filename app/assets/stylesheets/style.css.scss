@@ -57,6 +57,11 @@ section {
   }
 }
 
+.about-mobile {
+  // visibility: hidden;
+  display: none;
+}
+
 .catch-phrase {
   @include animation(drop 2s 1);
 }
@@ -124,13 +129,22 @@ section {
 }
 
 .nav {
-  backgro
   font-family: $bold_text;
   margin-bottom: 30px;
+  text-align: center;
 
-  a {
-    @include span-columns(3);
-    @include omega(4n);
+  .nav-item {
+    @include span-columns(4);
+    @include omega(3n);
+
+    a {
+      @include transition(all .4s);
+      color: $dark_text;
+      opacity: .4;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
 

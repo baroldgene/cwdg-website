@@ -1,3 +1,18 @@
+.icon-about-us, .icon-calendar-mini, .icon-tutorials {
+  position: relative;
+  margin-right: 6px;
+}
+
+.icon-about-us {
+  width: 23px;
+  top: 4px;
+}
+
+.icon-calendar-mini {
+  top: 4px;
+  width: 19px;
+}
+
 .icon-clipboard {
   width: 18px;
 }
@@ -8,6 +23,11 @@
 
 .icon-person {
   width: 28px;
+}
+
+.icon-tutorials {
+  width: 12px;
+  top: 4px;
 }
 
 .octocat {
