@@ -19,12 +19,14 @@ gem 'neat', '~> 1.6.0'
 gem 'octokit'        , '~> 3.4.2'
 gem 'omniauth-github', '~> 1.1.2'
 
-gem 'turbolinks', '~> 2.4.0'
+gem 'rufus-scheduler', '~> 3.0.9'
 
 gem 'redcarpet', '~> 3.2.0'
 
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'turbolinks', '~> 2.4.0'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'unicorn',        '~> 4.8.3'
