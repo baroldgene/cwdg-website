@@ -16,6 +16,7 @@ gem 'pg', '~> 0.17.1'
 
 gem 'neat', '~> 1.6.0'
 
+gem 'octokit'        , '~> 3.4.2'
 gem 'omniauth-github', '~> 1.1.2'
 
 gem 'turbolinks', '~> 2.4.0'
