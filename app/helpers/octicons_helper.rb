@@ -1,9 +1,9 @@
 module OcticonsHelper
-  def mega_oction(code)
+  def mega_octicon(code)
     content_tag :span, '', :class => "mega-octicon octicon-#{code.to_s.dasherize}"
   end
 
-  def oction(code)
+  def octicon(code)
     content_tag :span, '', :class => "octicon octicon-#{code.to_s.dasherize}"
   end
 end
