@@ -9,12 +9,12 @@
       <% if user_signed_in? %>
         <%= link_to user_path(current_user) do %>
           <span><%= current_user.name %></span>
-          <%= image_tag_with_at2x("octocat.png", class: "octocat") %>
+          <%= mega_octicon('mark-github') %>
         <% end %>
       <% else %>
         <%= link_to login_path do %>
           <span>Sign in with GitHub</span>
-          <%= image_tag_with_at2x("octocat.png", class: "octocat") %>
+          <%= mega_octicon('mark-github') %>
         <% end %>
       <% end %>
     </div>

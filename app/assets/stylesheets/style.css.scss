@@ -92,7 +92,7 @@ section {
   @include span-columns(4);
   @include omega(3n);
 
-  img {
+  .mega-octicon {
     margin-left: 45%;
   }
 
@@ -142,6 +142,11 @@ section {
   margin-bottom: 30px;
   text-align: center;
   border-bottom: 2px solid #eee2e2;
+  font-size: 18px;
+
+  .mega-octicon {
+    font-size: 18px;
+  }
 
   .nav-item {
     @include span-columns(4);
@@ -158,9 +163,18 @@ section {
   }
 }
 
+#next-meeting {
+  font-size: 40px;
+}
+
 .presentation {
   font-size: 20px;
   margin-bottom: 15px;
+
+  .mega-octicon {
+    font-size: 20px;
+    margin-right: 18px;
+  }
 }
 
 .user-auth-container {
@@ -173,7 +187,7 @@ section {
     float: right;
   }
 
-  &:hover > a > .octocat {
+  &:hover > a > .mega-octicon {
     @include transform (rotate(360deg));
   }
 }
@@ -188,5 +202,12 @@ section {
 
   a {
     color: white;
+  }
+
+  .octicon-mark-github {
+    font-size: 23px;
+    margin-left: 4px;
+    @include transition (all .4s ease-in-out);
+    @include transform (rotate(0));
   }
 }
