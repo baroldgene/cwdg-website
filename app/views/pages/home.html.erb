@@ -1,4 +1,5 @@
 <%= render 'pages/header' %>
+
 <section id="meeting-and-navigation">
   <div class="container">
     <div class="nav">
@@ -67,6 +68,10 @@
     <p>We hang out in <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a>, an IRC channel on Freenode. Feel free to ask questions and join in discussions.</p>
     <p>If you do nothing else, <a href="http://eepurl.com/GBJFv">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.</p>
 
-    <%= link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"%>
+    <p>
+      <%= link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"%>
+    </p>
   </div>
 </section>
+
+<%= render 'pages/footer' %>
