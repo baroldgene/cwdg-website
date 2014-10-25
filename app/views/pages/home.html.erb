@@ -1,26 +1,28 @@
 <%= render 'pages/header' %>
 <section id="meeting-and-navigation">
-  <div class="container nav">
-    <div class="nav-item">
-      <%= link_to '#' do %>
-        <%= mega_octicon('calendar') %>
-        <span class="nav-description">Meetings</span>
-      <% end %>
-    </div>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-item">
+        <%= link_to '#' do %>
+          <%= mega_octicon('calendar') %>
+          <span class="nav-description">Meetings</span>
+        <% end %>
+      </div>
 
-    <div class="nav-item">
-      <%= link_to about_path do %>
-        <%= mega_octicon('organization') %>
-        <span class="nav-description about-large">About Us</span>
-        <span class="nav-description about-mobile">About</span>
-      <% end %>
-    </div>
+      <div class="nav-item">
+        <%= link_to about_path do %>
+          <%= mega_octicon('organization') %>
+          <span class="nav-description about-large">About Us</span>
+          <span class="nav-description about-mobile">About</span>
+        <% end %>
+      </div>
 
-    <div class="nav-item">
-      <%= link_to '#' do %>
-        <%= mega_octicon('pencil') %>
-        <span class="nav-description">Tutorials</span>
-      <% end %>
+      <div class="nav-item">
+        <%= link_to '#' do %>
+          <%= mega_octicon('pencil') %>
+          <span class="nav-description">Tutorials</span>
+        <% end %>
+      </div>
     </div>
   </div>
 
