@@ -11,6 +11,19 @@ But yet still can't answer [emails for me](mailto:cwdgosu@gmail.com).
 
 ###Run this application
 
+[icu4c](http://icu-project.org/apiref/icu4c/) is required for this application.
+Please install it before running `./script/bootstrap`
+```
+# Homebrew
+brew install icu4c
+
+# Macports
+port install icu4c
+
+# Ubuntu
+sudo apt-get install libicu-dev
+```
+
 This application runs [Postgresql](http://www.postgresql.org) both locally and on Heroku.
 Please have this setup before you continue on.
 
