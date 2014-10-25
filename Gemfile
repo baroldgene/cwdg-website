@@ -9,6 +9,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'dotenv-rails', '~> 1.0.2'
 
+gem 'geo_pattern', '~> 1.2.1'
+
 gem 'jbuilder',     '~> 2.2.2'
 gem 'jquery-rails', '~> 4.0.0.beta2'
 
