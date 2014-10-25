@@ -195,6 +195,40 @@ p {
   }
 }
 
+.tutorial {
+  a {
+    font-family: $regular_text, sans-serif;
+    color: $link;
+  }
+
+  h1, h2 {
+    border-bottom: 1px solid rgba($dark_text, 0.1);
+    padding-bottom: 5px;
+  }
+
+  h2, p {
+    color: $dark_text;
+  }
+
+  h3 {
+   font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ol, ul {
+    font-size: 16px;
+  }
+
+  pre {
+    background-color: rgba(247, 247, 247, 1);
+    border-radius: 3px;
+    padding: 16px;
+  }
+}
+
 .tutorials {
   list-style: none;
   font-size: 35px;
