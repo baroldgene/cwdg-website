@@ -26,3 +26,5 @@ config/database.yml
 
 # Ignore .env for environment variables
 .env
+
+/.vagrant
