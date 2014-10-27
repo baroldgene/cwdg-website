@@ -9,6 +9,7 @@ script:
   - bundle exec rake
 before_script:
   - cp config/database.travis.yml config/database.yml
+  - cp config/secrets-example.yml config/secrets.yml
   - psql -c 'create database cwdg_test;' -U postgres
 notifications:
   email:
