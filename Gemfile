@@ -7,8 +7,6 @@ gem 'bourbon', '~> 4.0.2'
 
 gem 'coffee-rails', '~> 4.1.0'
 
-gem 'dotenv-rails', '~> 1.0.2'
-
 gem 'geo_pattern', '~> 1.2.1'
 gem 'github-markdown', '~> 0.6.7'
 gem "github-linguist",  "~> 2.10"
