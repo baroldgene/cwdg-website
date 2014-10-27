@@ -2,13 +2,14 @@ language: ruby
 rvm:
   - 2.1.2
 env:
-  - DB=postgresql TEST_SECRET_KEY_BASE=22aac72047e72b4d3d88e5054c52a0e26b7aee2ce9a64a06e075cc6278f2b3cc3dbc818ede54030541825e3a445fed012f38322e0f02f7f6b7a563d61b0ef82f
+  - DB=postgresql
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rake
 before_script:
   - cp config/database.travis.yml config/database.yml
+  - cp config/secrets-example.yml config/secrets.yml
   - psql -c 'create database cwdg_test;' -U postgres
 notifications:
   email:
