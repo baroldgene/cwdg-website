@@ -10,6 +10,9 @@
 # Ignore bundler config.
 /.bundle
 
+# Secrets.yml
+config/secrets.yml
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -24,5 +27,5 @@
 # Ignore database.yml
 config/database.yml
 
-# Ignore .env for environment variables
-.env
+# Vagrant
+/.vagrant
