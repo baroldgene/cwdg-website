@@ -1,10 +1,7 @@
 class User < ActiveRecord::Base
   before_save { self.name = self.username if self.name.blank? }
 
-  validates :gravatar_url, presence: true
-  validates :provider,     presence: true
-  validates :uid,          presence: true
-  validates :username,     presence: true
+  validates :gravatar_url, :provider, :uid, :username, presence: true
 
   def self.create_with_omniauth(auth)
     create! do |user|

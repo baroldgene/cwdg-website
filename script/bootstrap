@@ -8,17 +8,14 @@ then
   cp config/database-example.yml config/database.yml
 fi
 
-bundle install
-
-printf "Looking for tables\n"
-if [ "$(psql -l | grep cwdg_development | wc -l)" -eq 0 ] || [ "$(psql -l | grep cwdg_test | wc -l)" -eq 0 ]
+if [ ! -f config/secret.yml ]
 then
-  printf "Creating table(s)...\n"
-  bundle exec rake db:create
-else
-  printf "Found them!\n"
+  printf "Copying config/secrets-example.yml -> config/secrets.yml\n"
+  printf "You need to configure this...\n"
+  cp config/secrets-example.yml config/secrets.yml
 fi
 
+bundle install
 bundle exec rake db:migrate
 
-printf "Done!\n"
+echo 'good to go'

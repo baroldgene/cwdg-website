@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 gem 'rails', '4.2.0.beta2'
 
 gem 'bourbon', '~> 4.0.2'
 
 gem 'coffee-rails', '~> 4.1.0'
+
+gem 'geo_pattern', '~> 1.2.1'
+gem 'github-markdown', '~> 0.6.7'
+gem "github-linguist",  "~> 2.10"
+
+gem 'html-pipeline', '~> 1.11.0'
 
 gem 'jbuilder',     '~> 2.2.2'
 gem 'jquery-rails', '~> 4.0.0.beta2'
@@ -14,9 +20,12 @@ gem 'pg', '~> 0.17.1'
 
 gem 'neat', '~> 1.6.0'
 
+gem 'octokit'        , '~> 3.4.2'
 gem 'omniauth-github', '~> 1.1.2'
 
 gem 'rufus-scheduler', '~> 3.0.9'
+
+gem 'redcarpet', '~> 3.2.0'
 
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'sdoc', '~> 0.4.0', group: :doc
