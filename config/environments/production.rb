@@ -78,5 +78,5 @@ Rails.application.configure do
   # There has to be a better way of doing this
   Rails.application.secrets.secret_key_base =      ENV["SECRET_KEY_BASE"]
   Rails.application.secrets.github_client_id =     ENV["GITHUB_CLIENT_ID"]
-  Rails.application.secrets.github_client_secret = ENV["GITHUB_SECRET"]
+  Rails.application.secrets.github_client_secret = ENV["GITHUB_CLIENT_SECRET"]
 end
