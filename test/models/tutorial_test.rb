@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class TutorialTest < ActiveSupport::TestCase
-
   def setup
     @tutorial = tutorials(:vagrant_intro)
   end

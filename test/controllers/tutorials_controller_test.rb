@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class TutorialsControllerTest < ActionController::TestCase
-
   setup do
     @tutorial = tutorials(:vagrant_intro)
   end
