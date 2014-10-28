@@ -39,6 +39,10 @@ header {
   }
 }
 
+header#tutorials-header {
+  padding-bottom: 0px;
+}
+
 footer {
   text-align: center;
 
@@ -91,10 +95,8 @@ p {
 }
 
 #getting-started {
-  background: image-url('bottom.jpg') no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 
   a {
     color: white;
@@ -191,6 +193,67 @@ p {
   .mega-octicon {
     font-size: 20px;
     margin-right: 18px;
+  }
+}
+
+.tutorial {
+  a {
+    font-family: $regular_text, sans-serif;
+    color: $link;
+  }
+
+  h1, h2 {
+    border-bottom: 1px solid rgba($dark_text, 0.1);
+    padding-bottom: 5px;
+  }
+
+  h2, p {
+    color: $dark_text;
+  }
+
+  h3 {
+   font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ol, ul {
+    font-size: 16px;
+  }
+
+  pre {
+    background-color: rgba(247, 247, 247, 1);
+    border-radius: 3px;
+    padding: 16px;
+  }
+}
+
+.tutorials {
+  list-style: none;
+  font-size: 35px;
+
+  a {
+    color: $dark_text;
+  }
+
+  li {
+    padding-bottom: 10px;
+
+    .tutorial-title {
+      float: left;
+    }
+
+    .last-updated {
+      padding-top: 8px;
+      font-size: 20px;
+      float: right;
+    }
+  }
+
+  .mega-octicon {
+    margin-right: 15px;
   }
 }
 

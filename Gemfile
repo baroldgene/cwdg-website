@@ -1,13 +1,17 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 gem 'rails', '4.2.0.beta2'
 
 gem 'bourbon', '~> 4.0.2'
 
 gem 'coffee-rails', '~> 4.1.0'
 
-gem 'dotenv-rails', '~> 1.0.2'
+gem 'geo_pattern', '~> 1.2.1'
+gem 'github-markdown', '~> 0.6.7'
+gem "github-linguist",  "~> 2.10"
+
+gem 'html-pipeline', '~> 1.11.0'
 
 gem 'jbuilder',     '~> 2.2.2'
 gem 'jquery-rails', '~> 4.0.0.beta2'

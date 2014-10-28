@@ -58,20 +58,22 @@
   </div>
 </section>
 
-<section id="getting-started">
-  <div class="container">
-    <h2>How do I get started?</h2>
+<%= content_tag :section, id: 'getting-started', style: "background: #{geo_pattern_image('How do I get started', {color: '#7A3332'})}" do %>
+  <!-- <section id="getting&#45;started"> -->
+    <div class="container">
+      <h2>How do I get started?</h2>
 
-    <p>The best way to get started is to show up to our meetings. We generally shoot for a split meeting format. The first hour we will present a topic to the members. The second hour is for them to explore that topic on their own laptop to gain experience.</p>
-    <p>Before you attend your first meeting, it is recommended you follow our <a href="#">Developer Setup Tutorial</a> so you can be productive as soon as you start.</p>
-    <p>You may also want to familiarize yourself with the <a href="http://ruby-lang.org">Ruby Programming Language</a> or look over our past meeting materials to familarize yourself with the topics you have missed.</p>
-    <p>We hang out in <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a>, an IRC channel on Freenode. Feel free to ask questions and join in discussions.</p>
-    <p>If you do nothing else, <a href="http://eepurl.com/GBJFv">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.</p>
+      <p>The best way to get started is to show up to our meetings. We generally shoot for a split meeting format. The first hour we will present a topic to the members. The second hour is for them to explore that topic on their own laptop to gain experience.</p>
+      <p>Before you attend your first meeting, it is recommended you follow our <a href="#">Developer Setup Tutorial</a> so you can be productive as soon as you start.</p>
+      <p>You may also want to familiarize yourself with the <a href="http://ruby-lang.org">Ruby Programming Language</a> or look over our past meeting materials to familarize yourself with the topics you have missed.</p>
+      <p>We hang out in <a href="https://webchat.freenode.net/?channels=cwdg">#cwdg</a>, an IRC channel on Freenode. Feel free to ask questions and join in discussions.</p>
+      <p>If you do nothing else, <a href="http://eepurl.com/GBJFv">Sign Up For The Mailing List</a> so we can let you know about all the sweet things.</p>
 
-    <p>
-      <%= link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"%>
-    </p>
-  </div>
-</section>
+      <p>
+        <%= link_to "JOIN THE MAILING LIST", "http://eepurl.com/GBJFv", class: "button"%>
+      </p>
+    </div>
+    <!-- </section> -->
+<% end %>
 
 <%= render 'pages/footer' %>

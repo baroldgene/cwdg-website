@@ -29,6 +29,16 @@ header {
   }
 }
 
+.last-updated {
+  @include media($tablet) {
+    display: none;
+  }
+
+  @include media($mobile) {
+    display: none;
+  }
+}
+
 .logo-container {
   @include media($tablet) {
     @include span-columns(5);
