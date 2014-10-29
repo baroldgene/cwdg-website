@@ -12,6 +12,6 @@ Vagrant.configure('2') do |config|
   # Comment this out if your aren't using OSX
   config.vm.synced_folder ".", "/home/vagrant/cwdg-website", type: "nfs"
 
-  config.vm.provision :shell, path: 'script/bootstrap', keep_color: true
+  config.vm.provision :shell, path: 'script/vagrant-bootstrap', keep_color: true
   config.vm.network 'private_network', ip: '192.168.50.4'
 end
