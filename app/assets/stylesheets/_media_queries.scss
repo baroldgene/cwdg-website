@@ -52,6 +52,15 @@ header {
   }
 }
 
+.info-column {
+  @include media($mobile) {
+    width: 100%;
+  }
+  @include media($tablet) {
+    width: 100%;
+  }
+}
+
 .nav-item {
   @include media($tablet) {
     .about-large {
@@ -76,6 +85,9 @@ header {
 
 .next-meeting {
   @include media($mobile) {
+    text-align: center;
+  }
+  @include media($tablet) {
     text-align: center;
   }
 }
