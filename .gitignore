@@ -29,3 +29,6 @@ config/database.yml
 
 # Vagrant
 /.vagrant
+
+# Vim swap files
+*.swp
