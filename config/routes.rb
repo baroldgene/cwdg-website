@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :tutorials, only: [:index, :show]
-  resources :users, only: [:index, :show]
+  resources :users, only: [:show]
 
   root 'pages#home'
 
