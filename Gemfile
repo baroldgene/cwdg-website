@@ -28,7 +28,7 @@ gem 'rufus-scheduler', '~> 3.0.9'
 gem 'redcarpet', '~> 3.2.0'
 
 gem 'sass-rails', '~> 5.0.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc',       '~> 0.4.0', group: :doc
 
 gem 'turbolinks', '~> 2.4.0'
 
@@ -37,11 +37,10 @@ gem 'unicorn',  '~> 4.8.3'
 
 group :development, :test do
   gem 'awesome_print',     '~> 1.2.0'
-  gem 'better_errors',     '~> 2.0.0'
-  gem 'binding_of_caller', '~> 0.7.2'
   gem 'pry-rails',         '~> 0.3.2'
   gem 'spring',            '~> 1.1.3'
   gem 'quiet_assets',      '~> 1.0.3'
+  gem 'web-console',       '~> 2.0'
 end
 
 group :test do
