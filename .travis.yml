@@ -16,3 +16,5 @@ before_script:
 notifications:
   email:
     - cwdgosu@gmail.com
+deploy:
+  provider: heroku
